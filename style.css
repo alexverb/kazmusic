@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
- background:url("img/bg-figures.png") no-repeat 50% 0, url("img/background.png") repeat-x 50% 0;
+ background:url("img/bg-figures.png") no-repeat 50% 0, url("img/bg.png") repeat-x 50% 0;
  color: #7d7d6a;
  font:400 13px 'Cuprum', sans-serif;
  margin: 0;
@@ -136,9 +136,6 @@ box-shadow:0 1px 0 #f5f4ee inset;
 border-bottom:1px solid #fffdf3;
 }
 
-.search {}
-
-
 .header {
 height:115px;
 width:100%;
@@ -169,7 +166,7 @@ display:block;
 width:210px;
 height:49px;
 float:left;
-background:url("img/kazmusic-bg.png") no-repeat -13px -11px;
+background:url("img/logo.png") no-repeat;
 margin:31px 0 0 30px;
 }
 
@@ -1594,3 +1591,25 @@ border:0 none;
 a:hover:after {
  background-position: -10px -93px;
 }
+
+/* --------------------- Add AlexVerb [01.05.13] --------------------------- */
+
+/* Поиск */
+.search {background-color: #f8f8f8; border-radius:3px; width: 250px; height: 30px; margin: 10px 10px 0 0; -webkit-box-shadow: inset 0px 1px 2px 1px rgba(162, 162, 162, 0.09); box-shadow: inset 0px 1px 2px 1px rgba(162, 162, 162, 0.09);}
+  .search ul {list-style: none;}
+    .search ul li {}
+    .search ul li.lcol {padding: 8px 10px;}
+      .search ul .sfield input[type="text"] {background: none; border: none; font: italic 12px 'Cuprum'; color: #b7b2ad; width: 200px;}
+      .search ul .sbtn {margin: 10px 8px 0 0;}
+      .search ul .sbtn button {background: url("img/kazmusic-bg.png") no-repeat left -336px; width: 19px; height: 14px; display: block; border: none; cursor: pointer;}
+        .search ul .sbtn button:hover {background-position: -20px -336px;}
+      
+/* Выпадающее меню */
+.dropdown {}
+  .dropdown ul {background: #df1239 !important; border-top: 1px solid #fd2a52; margin-bottom: -2px; position: relative; z-index: 100;}
+    .dropdown ul li {border-top: 1px dotted #f31e46; border-bottom: 1px dotted #b80c2d;}
+    .dropdown ul li:first-child {border-top: 1px solid #c41032;}
+      .dropdown ul li a {background: #df1239 !important;}
+      .dropdown ul li a:hover {background: none !important; box-shadow: none !important; color: #463134; text-shadow: 1px 1px 0 #f21741;} 
+      .dropdown ul li a:after {background:url("img/kazmusic-bg.png") no-repeat -39px -71px;}
+      .dropdown ul li a:hover:after {background:url("img/kazmusic-bg.png") no-repeat -44px -71px;}

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Главная</title>
   <link rel="stylesheet" href="style.css" type="text/css">
+  
 </head>
 <body>
 
@@ -12,7 +13,7 @@
     <header>
     
       <div class="nav">
-        <ul class="nav-menu">
+        <ul class="nav-menu lcol">
           <li><a href="/">ГЛАВНАЯ</a></li>
           <li><a href="/">НАШ ФОРУМ</a></li>
           <li><a href="/">ПРАВИЛА</a></li>
@@ -20,8 +21,11 @@
           <li><a href="/">ПРАВООБЛАДАТЕЛЯМ</a></li>
           <li><a href="/">СТАТИСТИКА</a></li>
         </ul>
-        <div class="search">
-          
+        <div class="search rcol">
+          <ul>
+            <li class="lcol sfield"><input type="text" id="story" name="story" value="Введите текст для поиска..." onblur="if(this.value=='') this.value='Введите текст для поиска...';" onfocus="if(this.value=='Введите текст для поиска...') this.value='';"></li>
+            <li class="rcol sbtn"><button></button></li>
+          </ul>  
         </div>
         <div class="clr"></div>
       </div>
@@ -146,6 +150,13 @@
           <div class="cmsepline"></div>
           <ul>
             <li><a href="/">Главная</a></li>
+            <li class="dropdown"><a href="/">Выпадающее меню</a>
+              <ul>
+                <li><a href="/">Подкатегория меню</a></li>
+                <li><a href="/">Подкатегория меню</a></li>
+                <li><a href="/">Подкатегория меню</a></li>
+              </ul>
+            </li>
             <li><a href="/">Главная</a></li>
             <li><a href="/">Главная</a></li>
             <li><a href="/">Главная</a></li>
