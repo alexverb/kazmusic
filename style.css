@@ -1,0 +1,1596 @@
+@import url(http://fonts.googleapis.com/css?family=Cuprum:400,700italic,700,400italic&subset=latin,cyrillic);
+
+/* Main style-Reset */
+* {
+ margin: 0;
+ padding: 0;
+}
+
+html, body {
+ height: 100%;
+ cursor:default;
+}
+
+body {
+ background:url("img/bg-figures.png") no-repeat 50% 0, url("img/background.png") repeat-x 50% 0;
+ color: #7d7d6a;
+ font:400 13px 'Cuprum', sans-serif;
+ margin: 0;
+ padding: 0;
+ position: relative;
+ text-rendering: optimizelegibility;
+}
+
+ a {
+ color: #678C99;
+ outline: medium none;
+ text-decoration: none;
+}
+a:hover {
+ color: #678C99;
+ text-decoration:underline;
+}
+
+a img {
+ border: 0 none;
+}
+
+img {
+ border: 0 none;
+ vertical-align:middle;
+}
+
+textarea {
+ resize: vertical;
+}
+
+input, textarea, select, button, a {
+ outline: 0 none;
+}
+
+ol, ul {
+ list-style: none outside none;
+ margin: 0;
+ padding: 0;
+}
+
+.clr {
+ clear: both;
+}
+
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+
+p {
+ margin: 0;
+ padding: 0;
+}
+
+:focus {
+ outline: 0 none;
+}
+
+.noselect {
+ -moz-user-select: none;
+}
+
+::-moz-focus-inner {
+ border: 0 none;
+}
+
+.lcol {
+ float: left;
+}
+
+ .rcol {
+ float: right;
+}
+
+.wrapper {width:1000px;margin:0 auto}
+
+
+/*--- Start HEADER ---*/
+
+header {position: relative;}
+
+.nav {
+  border-bottom:1px solid #d4d4d3;
+  background-color: #f8f8f8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f8f8f8));
+  background: -webkit-linear-gradient(top, #fff 0%, #f8f8f8 100%) !important;
+  background: -moz-linear-gradient(top, #fff 0%, #f8f8f8 100%);
+  background: -ms-linear-gradient(top, #fff, #f8f8f8);
+  background: -o-linear-gradient(top, #fff, #f8f8f8);
+}
+
+.nav-menu {float:left}
+ .nav-menu li {float:left}
+
+ .nav-menu li a {
+
+color:#b7b2ad;
+border-right:1px solid #f5f3f3;
+height:51px;display:block;font-size:14px;padding:0 18px;line-height:52px;
+box-shadow: -1px 0 0 #fff inset
+}
+
+.nav-menu li a:hover {
+color:#fff;
+text-decoration:none;
+text-shadow:1px 1px 0 rgba(0, 0, 0, 0.14);
+background-color: #e21138;
+ background: -webkit-gradient(linear, left top, left bottom, from(#ff2754), to(#e21138));
+ background: -webkit-linear-gradient(top, #ff2754 0%, #e21138 100%) !important;
+ background: -moz-linear-gradient(top, #ff2754 0%, #e21138 100%);
+ background: -ms-linear-gradient(top, #ff2754, #e21138);
+ background: -o-linear-gradient(top, #ff2754, #e21138);
+box-shadow:0 1px 0 #c70227, 0 -2px 0 #c70227 inset, 0 1px 0 #ff7a96 inset, 1px 0 0 #dc0d34 inset;
+}
+
+.nav-sepline {width:100%;
+height:3px;
+background:#ededec;
+box-shadow:0 1px 0 #f5f4ee inset;
+border-bottom:1px solid #fffdf3;
+}
+
+.search {}
+
+
+.header {
+height:115px;
+width:100%;
+border-bottom:1px solid #fbfbfb;
+box-shadow:0 -1px 0 #f9f9f9;
+background:#fff;
+position:relative;
+}
+
+.header:after {
+content:"";
+height:17px;
+width:1000px;
+position:absolute;
+left:0;
+top:0;
+
+ background-color: #fff;
+ background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#fff));
+ background: -webkit-linear-gradient(top, #f9f9f9 0%, #fff 100%) !important;
+ background: -moz-linear-gradient(top, #f9f9f9 0%, #fff 100%);
+ background: -ms-linear-gradient(top, #f9f9f9, #fff);
+ background: -o-linear-gradient(top, #f9f9f9, #fff);
+}
+
+.header .logo {
+display:block;
+width:210px;
+height:49px;
+float:left;
+background:url("img/kazmusic-bg.png") no-repeat -13px -11px;
+margin:31px 0 0 30px;
+}
+
+.header .banner {width:478px;
+height:70px;
+float:right;
+background:url("img/kazmusic-bg.png") no-repeat 0 0;
+margin:22px 19px 0 0;
+}
+
+.header .banner a {
+display:block;
+margin:5px 0 0 5px;
+}
+
+
+.slider {
+height: 283px;
+width:100%;
+background:#f2f2e8;
+}
+
+.slider-panel {
+width:411px;
+height:263px;
+border:4px solid #fff;
+float:left;
+margin:6px 6px 0 5px;
+box-shadow:0 1px 3px rgba(0, 0, 0, 0.06);
+position:relative;
+}
+
+
+.slider-date {height:36px;
+display:inline-block;
+padding:5px 10px 0;
+background:#61b82d;
+position:absolute;
+right:0;
+top:0;
+text-shadow:0 1px 0 rgba(0, 0, 0, 0.13);
+color:#fff;
+text-align:center;
+}
+
+.slider-categories {
+height:30px;
+background:#f91540;
+padding:0 9px;
+display:inline-block;
+text-shadow:0 1px 0 rgba(0, 0, 0, 0.19);
+font-size:14px;
+color:#fff;
+position:absolute;
+bottom:35px;
+left:6px;
+line-height:30px;
+}
+
+.slider-title {
+height:30px;
+color:#fff;
+background: rgba(0, 0, 0, 0.71);
+text-shadow:0 1px 0 rgba(0, 0, 0, 0.19);
+padding:0 47px 0 9px;
+display:inline-block;
+position:absolute;
+bottom:5px;
+left:6px;
+line-height:30px;
+}
+
+.slider-title:after {
+ background: url("img/kazmusic-bg.png") no-repeat -2px -74px;
+ content: "";
+ height: 12px;
+ position: absolute;
+ right: 8px;
+ top: 9px;
+ width: 7px;
+}
+
+.slider-nav {
+float:right;
+width:565px;
+margin:6px 5px 0 0;
+}
+
+.slider-bar {height:41px;
+border-bottom:3px solid #e4e4d5;
+margin: 0 0 5px;
+background-color: #f8f8f8;
+ background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f8f8f8));
+ background: -webkit-linear-gradient(top, #fff 0%, #f8f8f8 100%) !important;
+ background: -moz-linear-gradient(top, #fff 0%, #f8f8f8 100%);
+ background: -ms-linear-gradient(top, #fff, #f8f8f8);
+ background: -o-linear-gradient(top, #fff, #f8f8f8);
+}
+
+.slider-bar a.arrows {
+width:37px;
+height:41px;
+display:block;
+border-right:1px solid #F5F3F3;
+box-shadow:-1px 0 0 #fff inset;
+float:left;
+background:url("img/kazmusic-bg.png") no-repeat;
+}
+
+.slider-bar a.prev {
+ background-position: -98px -76px;
+}
+
+.slider-bar a.prev:hover {
+background-position: -37px -74px;
+}
+
+.slider-bar a.next {
+background-position: -69px -75px;
+}
+
+
+.slider-bar a.next:hover {
+background-position: -129px -77px;
+}
+
+.slider-bar .ctitle {
+ color: #BBAD9E;
+ float: left;
+ font-size: 14px;
+ line-height: 42px;
+ padding: 0 0 0 15px;
+}
+
+.slider-bar .ctitle span {
+color:#f91540;
+}
+
+.slider-bar ul {
+float:right
+}
+.slider-bar ul li {
+float:left;
+}
+
+.slider-bar ul li a {
+height:41px;
+padding:0 11px;
+color:#d5c9be;
+line-height: 42px;
+display:inline-block;
+box-shadow:-1px 0 0 #fff inset, 1px 0 0 #F5F3F3 inset;
+}
+
+.slider-bar ul li a:hover {
+box-shadow:0 3px 0 #61b82d, -1px 0 0 #fff inset, 1px 0 0 #F5F3F3 inset;
+text-decoration:none;
+color:#949494;
+}
+
+.slider-bar ul li a span {
+background:#f91540;
+border-radius:3px;
+color:#fff;
+padding:0 6px;
+margin: 0 0 0 4px;
+}
+
+.slider-bar ul li a:hover span {
+background:#61b82d;
+}
+
+
+
+.slider-tabs li a {
+box-shadow:1px 1px 0 #ebebe8 inset, -1px -1px 0 #ebebe8 inset;
+display:block;
+height:71px;
+width:280px;
+background:#fff;
+font-style:italic;
+font-size:12px;
+color:#8f8f7a;
+}
+
+.slider-tabs li {
+float:left
+}
+
+.slider-tabs li:nth-child(2n+1){
+margin:0 5px 5px 0;
+}
+
+.slider-tabs li a img {
+float:left;
+border:3px solid #e2e2d2;
+width:64px;
+height:65px;
+position:relative;
+}
+.slider-tabs li a:hover img {
+border:3px solid #45494e;
+}
+
+
+.slider-tabs li a span {
+ -moz-box-sizing: border-box;
+box-sizing: border-box;
+ border-bottom: 1px dotted #DFDFDF;
+ color: #61B82D;
+ display: block;
+ float: right;
+ height: 34px;
+ line-height: 12px;
+ padding: 5px 13px 0;
+ width: 210px;
+position:relative;
+}
+
+.slider-tabs li a span:after {
+content:"";
+background:url("img/kazmusic-bg.png") no-repeat -26px -76px;
+width:5px;
+height:9px;
+position:absolute;
+top:12px;
+left:0;
+}
+.slider-tabs li a:hover span {
+color:#f91540;
+}
+.slider-tabs li a:hover span:after {
+background-position: -15px -76px;
+}
+
+.slider-tabs li a div {
+ -moz-box-sizing: border-box;
+box-sizing: border-box;
+padding:2px 6px 0 6px;
+width: 210px;
+height:36px;
+float:right;
+}
+
+
+/*--- End HEADER ---*/
+
+
+
+
+
+
+/*--- Start AFTERHEADER ---*/
+
+.after-header .aft-title {
+height:38px;
+width:100%;
+border-top:1px solid #fff;
+border-bottom:1px solid #f4f4f4;
+background-color: #fbfafa;
+ background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#fbfafa));
+ background: -webkit-linear-gradient(top, #f2f2f2 0%, #fbfafa 100%) !important;
+ background: -moz-linear-gradient(top, #f2f2f2 0%, #fbfafa 100%);
+ background: -ms-linear-gradient(top, #f2f2f2, #fbfafa);
+ background: -o-linear-gradient(top, #f2f2f2, #fbfafa);
+margin:0 0 1px;
+box-shadow:0 1px 0 #fbfafa;
+font-size:14px;
+}
+
+.after-header .aft-title div {
+color:#bcbab4;
+padding:0 0 0 34px;
+float:left;
+position: relative;
+line-height:38px;
+}
+
+.after-header .aft-title div:after {
+ background: url("img/kazmusic-bg.png") no-repeat -18px -93px;
+ content: "";
+ height: 8px;
+ left: 14px;
+ position: absolute;
+ top: 15px;
+ width: 8px;
+}
+
+.after-header .aft-title div span {
+color:#7bcb1b;
+}
+.after-header .aft-title div:last-of-type span {
+color:#f91540;
+}
+
+.after-header .aft-title p {
+height:7px;
+float:left;
+width:298px;
+background: url("img/kazmusic-bg.png") no-repeat 0 -117px;
+margin: 16px 0 0 14px;
+}
+
+
+.after-h-content {
+ background: #F6F6F6;
+ border-bottom: 1px solid #EEEEEE;
+ border-top: 1px solid #EEEEEE;
+ box-shadow: 0 4px 0 #F8F8F8;
+ height: 232px;
+ margin: 0 0 4px;
+ padding: 1px 0 0;
+ width: 100%;
+}
+
+
+.after-h-content .after-h-list {
+float:left;
+width:494px;
+}
+
+.after-h-content .after-h-list li {
+float:left;
+}
+
+.after-h-content .after-h-list li:nth-child(2n+1) {
+margin: 0 4px 0 0;
+}
+
+.after-h-content .after-h-list li a {
+width:244px;
+height:33px;
+border-right:1px solid #f1f1f1;
+border-bottom:1px dotted #e8e8e8;
+display:block;
+background-color: #fcfcfc;
+ background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fcfcfc));
+ background: -webkit-linear-gradient(top, #fff 0%, #fcfcfc 100%) !important;
+ background: -moz-linear-gradient(top, #fff 0%, #fcfcfc 100%);
+ background: -ms-linear-gradient(top, #fff, #fcfcfc);
+ background: -o-linear-gradient(top, #fff, #fcfcfc);
+color:#b8afa5;
+font-size:12px;
+font-style:italic;
+line-height: 31px;
+padding:0 22px;
+ -moz-box-sizing: border-box;
+box-sizing: border-box;
+position:relative;
+}
+
+.after-h-content .after-h-list li:nth-child(13) a, .after-h-content .after-h-list li:last-of-type a {
+border-bottom:0 none;
+height: 34px;
+}
+
+.after-h-content .after-h-list li a:hover {
+color:#6dc603;
+}
+
+.after-h-content .after-h-list li a:after {
+content:"";
+width:6px;
+height:8px;
+background:url("img/kazmusic-bg.png") no-repeat -1px -93px;
+position:absolute;
+top:11px;
+left:9px;
+}
+.after-h-content .after-h-list li a:hover:after {
+background-position:-10px -93px;
+}
+
+
+
+.after-h-content .after-h-imc {
+width:502px;
+background:#fff;
+float:right;
+height:232px;
+}
+
+.after-h-content .after-h-imc li {
+float:left;
+border:3px solid #f2f2e8;
+margin: 5px 0 0 6px;
+position:relative;
+overflow:hidden;
+border-radius:3px;
+}
+.after-h-content .after-h-imc li a {
+display:block;
+position:relative;
+overflow:hidden;
+border-radius:3px;
+}
+
+.after-h-content .after-h-imc li a:after {
+content:"";
+background: url("img/kazmusic-bg.png") no-repeat 3px -124px;
+position:absolute;
+top:0;
+left:0;
+bottom:0;
+right:0;
+}
+
+.after-h-content .after-h-imc li a img {
+width:153px;
+height:102px;
+}
+
+.after-h-content .after-h-imc li a div {
+ background: #E41138;
+ border-radius: 3px 3px 3px 3px;
+ bottom: 0;
+ color: #FFFFFF;
+ font-size: 12px;
+ left: 0;
+ padding: 12px 14px 0 16px;
+ position: absolute;
+ right: 0;
+ top: 0;
+text-shadow:0 1px 0 rgba(0, 0, 0, 0.12);
+display:none;
+}
+
+.after-h-content .after-h-imc li a span {
+ background: #C80F31;
+ border-radius: 0 0 3px 3px;
+ bottom: 0;
+ color: #FFFFFF;
+ font-size: 12px;
+ font-style: italic;
+ height: 30px;
+ left: 0;
+ line-height: 30px;
+ padding: 0 26px 0 0;
+ position: absolute;
+ right: 0;
+ text-align: right;
+text-shadow:0 1px 0 rgba(0, 0, 0, 0.21);
+display:none;
+}
+.after-h-content .after-h-imc li a span:after {
+content:"";
+width:10px;
+height:13px;
+position:absolute;
+right:8px;
+bottom:8px;
+background: url("img/kazmusic-bg.png") no-repeat 0 -103px;
+}
+
+.after-h-content .after-h-imc li a:hover:after {
+display:none;
+}
+.after-h-content .after-h-imc li a:hover div, .after-h-content .after-h-imc li a:hover span {
+display:block;
+}
+
+
+/*--- End AFTERHEADER ---*/
+
+
+
+
+
+/*--- Start contentside ---*/
+
+
+
+
+.contentside {
+
+padding:7px 0 100px;
+
+}
+
+.contentside .leftside {
+width:243px;
+float:left;
+}
+
+
+.cm-block {
+position:relative;
+padding:0 0 5px;
+}
+.cm-block:after {
+content:"";
+width:243px;
+height:5px;
+position:absolute;
+bottom:0;
+left:0;
+background: url("img/kazmusic-bg.png") no-repeat -166px -109px;
+}
+
+.cm-block .cmtitle {
+height:40px;
+text-transform: uppercase;
+border-top:1px solid #fb355a;
+border-bottom:1px solid #ea163e;
+box-shadow:0 1px 0 #fd4669 inset, 0 -1px 0 #e11138 inset;
+background-color: #eb173f;
+ background: -webkit-gradient(linear, left top, left bottom, from(#fb345a), to(#eb173f));
+ background: -webkit-linear-gradient(top, #fb345a 0%, #eb173f 100%) !important;
+ background: -moz-linear-gradient(top, #fb345a 0%, #eb173f 100%);
+ background: -ms-linear-gradient(top, #fb345a, #eb173f);
+ background: -o-linear-gradient(top, #fb345a, #eb173f);
+border-radius:2px 2px 0 0;
+font-size:14px;
+color:#fff;
+padding:0 32px;
+position:relative;
+text-shadow:1px 1px 0 rgba(0, 0, 0, 0.14);
+line-height:40px;
+
+}
+
+.cm-block .cmtitle:before {
+content:"";
+width:8px;
+height:8px;
+position:absolute;
+left:13px;
+top:16px;
+background:url("img/kazmusic-bg.png") no-repeat -18px -105px;
+}
+
+.cm-block .cmsepline {
+height:4px;
+background:#e20c35;
+border-top:1px solid #ce0b30;
+box-shadow:0 1px 0 #db0c33 inset;
+}
+
+.cm-block ul li {
+border-top:1px solid #fd2a52;
+border-bottom:1px solid #d71337;
+}
+
+.cm-block ul li:last-of-type, .cm-block ul li:last-of-type a {
+border-radius:0 0 2px 2px;
+}
+
+
+.cm-block ul li a {
+height:32px;
+display:block;
+ background: -webkit-gradient(linear, left top, left bottom, from(#f91540), to(#eb0e38));
+ background: -webkit-linear-gradient(top, #f91540 0%, #eb0e38 100%) !important;
+ background: -moz-linear-gradient(top, #f91540 0%, #eb0e38 100%);
+ background: -ms-linear-gradient(top, #f91540, #eb0e38);
+ background: -o-linear-gradient(top, #f91540, #eb0e38);
+color:#fff;
+font-style:italic;
+padding:0 22px;
+text-shadow:1px 1px 0 rgba(0, 0, 0, 0.16);
+line-height:30px;
+position:relative;
+}
+
+.cm-block ul li a:after {
+content:"";
+width:4px;
+height:6px;
+position:absolute;
+left:10px;
+top:12px;
+background:url("img/kazmusic-bg.png") no-repeat -32px -106px;
+}
+
+.cm-block ul li a:hover {
+background:#3b3b3b !important;
+box-shadow: 0 1px 2px #2b2b2b inset, 1px 0 0 #363636 inset;
+text-decoration:none;
+}
+
+
+
+.lascomm-bl {
+position:relative;
+padding: 0 0 5px;
+float:left;
+margin:4px 0 0;
+}
+
+.lascomm-bl:after {
+ background: url("img/kazmusic-bg.png") no-repeat -175px -103px;
+ bottom: 0;
+ content: "";
+ height: 5px;
+ left: 0;
+ position: absolute;
+ width: 243px;
+}
+
+.lascomm-bl .lascomm-title {
+height:40px;
+text-transform: uppercase;
+border-top:1px solid #6ac334;
+border-bottom:1px solid #5bb128;
+box-shadow:0 1px 0 #6fcd37 inset, 0 -1px 0 #55aa23 inset;
+background-color: #5cb228;
+ background: -webkit-gradient(linear, left top, left bottom, from(#69c334), to(#5cb228));
+ background: -webkit-linear-gradient(top, #69c334 0%, #5cb228 100%) !important;
+ background: -moz-linear-gradient(top, #69c334 0%, #5cb228 100%);
+ background: -ms-linear-gradient(top, #69c334, #5cb228);
+ background: -o-linear-gradient(top, #69c334, #5cb228);
+border-radius:2px 2px 0 0;
+font-size:14px;
+color:#fff;
+padding:0 32px;
+position:relative;
+text-shadow:1px 1px 0 rgba(0, 0, 0, 0.14);
+line-height:40px;
+
+}
+
+.lascomm-bl .lascomm-title:before {
+content:"";
+width:8px;
+height:8px;
+position:absolute;
+left:13px;
+top:16px;
+background:url("img/kazmusic-bg.png") no-repeat -18px -105px;
+}
+
+.lascomm-bl .cmsepline {
+height:4px;
+background:#55a922;
+border-top:1px solid #4d9a1f;
+box-shadow:0 1px 0 #52a421 inset;
+border-bottom:1px solid #6cc735;
+}
+
+
+.lascomm-bl ul {
+background:#61b82d;
+float:left;
+padding:1px 0 6px;
+border-radius:0 0 2px 2px;
+}
+
+.lascomm-bl ul li a {
+background:#55a922;
+border-radius:2px;
+margin:4px 6px 0;
+display:block;
+color:#fff;
+font-size:12px;
+text-shadow:1px 1px 0 rgba(0, 0, 0, 0.09);
+padding:3px 7px 5px;
+position:relative;
+}
+.lascomm-bl ul li a span {
+color:#c8ffa7;
+}
+
+.lascomm-bl ul li a:hover {
+text-decoration:none;
+background:#79c949;
+}
+
+.lascomm-bl ul li a:after {
+content:"";
+width:13px;
+height:10px;
+position:absolute;
+right:4px;
+bottom:4px;
+background:url("img/kazmusic-bg.png") no-repeat -194px -84px;
+}
+
+.lascomm-bl ul li a:hover:after {
+background-position:-179px -84px;
+}
+
+
+
+
+
+
+.vote-bl {
+position:relative;
+padding: 0 0 5px;
+float:left;
+background:#232323;
+border-radius:3px 3px 2px 2px;
+width: 100%;
+margin:4px 0 0;
+}
+
+.vote-bl:after {
+ background: url("img/kazmusic-bg.png") no-repeat -175px -98px;
+ bottom: -5px;
+ content: "";
+ height: 5px;
+ left: 0;
+ position: absolute;
+ width: 243px;
+}
+
+
+
+.vote-bl .vote-title {
+height:40px;
+text-transform: uppercase;
+border-top:1px solid #2c2b2b;
+border-bottom:1px solid #232323;
+box-shadow:0 1px 0 #3e3e3e inset, 0 -1px 0 #1e1e1e inset;
+background-color: #242424;
+ background: -webkit-gradient(linear, left top, left bottom, from(#2c2b2b), to(#242424));
+ background: -webkit-linear-gradient(top, #2c2b2b 0%, #242424 100%) !important;
+ background: -moz-linear-gradient(top, #2c2b2b 0%, #242424 100%);
+ background: -ms-linear-gradient(top, #2c2b2b, #242424);
+ background: -o-linear-gradient(top, #2c2b2b, #242424);
+border-radius:2px 2px 0 0;
+font-size:14px;
+color:#fff;
+padding:0 32px;
+position:relative;
+text-shadow:1px 1px 0 rgba(0, 0, 0, 0.14);
+line-height:40px;
+
+}
+
+.vote-bl .vote-title:before {
+content:"";
+width:8px;
+height:8px;
+position:absolute;
+left:13px;
+top:16px;
+background:url("img/kazmusic-bg.png") no-repeat -18px -105px;
+}
+
+.vote-bl .cmsepline {
+height:4px;
+background:#1b1b1b;
+border-top:1px solid #171717;
+box-shadow:0 1px 0 #1a1a1a inset;
+border-bottom:1px solid #2b2a2a;
+}
+
+
+.vote-bl .vote-question {
+background:#303030;
+margin:8px 6px;
+color:#eee;
+border-radius:2px;
+border-top:1px solid #393939;
+font-size:14px;
+text-shadow:1px 1px 0 rgba(0, 0, 0, 0.37);
+position:relative;
+padding:12px 12px 0 52px;
+min-height:44px;
+box-shadow:0 1px 3px rgba(0, 0, 0, 0.22);
+-moz-box-sizing: border-box;
+box-sizing: border-box; 
+}
+
+.vote-bl .vote-question:after {
+content:"";
+width:32px;
+height:33px;
+position:absolute;
+left:7px;
+top:5px;
+background:url("img/kazmusic-bg.png") no-repeat 0 -227px;
+
+}
+
+.vote-bl .answer {
+font-size:0;
+color: transparent;
+}
+
+
+.vote-bl .answer input {
+margin:0 8px;
+}
+.vote-bl .answer label {
+color:#bfbfbf;
+font-size:13px;
+text-shadow:1px 1px 0 rgba(0, 0, 0, 0.43);
+}
+
+.vote-bl .pollBut {
+box-shadow:0 1px 3px rgba(0, 0, 0, 0.34), 0 1px 0 #545454 inset;
+height:23px;
+border:0 none;
+outline:0 none;
+margin: 11px 0 0;
+background-color: #303030;
+ background: -webkit-gradient(linear, left top, left bottom, from(#434242), to(#303030));
+ background: -webkit-linear-gradient(top, #434242 0%, #303030 100%) !important;
+ background: -moz-linear-gradient(top, #434242 0%, #303030 100%);
+ background: -ms-linear-gradient(top, #434242, #303030);
+ background: -o-linear-gradient(top, #434242, #303030);
+text-shadow:1px 1px 0 rgba(0, 0, 0, 0.19);
+border-radius:2px;
+color:#fff;
+font-size:13px;
+padding: 0 11px;
+cursor:pointer;
+}
+
+.answer span {
+ color: #BFBFBF;
+ display: block;
+ font-size: 13px;
+ padding: 6px 11px 8px;
+ text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.43);
+}
+
+
+.vote-bl .answer > div {
+
+background:#1f1f1f;
+height:12px;
+box-shadow:1px 1px 0 #161616 inset, 0 1px 0 #292929;
+border-radius:2px;
+margin: 0 6px;
+padding: 0 !important;
+}
+
+.vote-bl .answer > div > div {
+height:6px !important;
+border-radius:2px;
+margin:3px 3px 0;
+float:left;
+}
+
+.vote-bl .answer div div img {
+display:none;
+}
+
+
+
+.vote-answ .answer:nth-of-type(1) div div {
+ background: -webkit-gradient(linear, left top, left bottom, from(#6ebf35), to(#559e27)) !important;
+ background: -webkit-linear-gradient(top, #6ebf35 0%, #559e27 100%) !important;
+ background: -moz-linear-gradient(top, #6ebf35 0%, #559e27 100%) !important;
+ background: -ms-linear-gradient(top, #6ebf35, #559e27) !important;
+ background: -o-linear-gradient(top, #6ebf35, #559e27) !important;
+box-shadow:0 1px 0 #8ee84d inset;
+}
+.vote-answ .answer:nth-of-type(2) div div {
+ background: -webkit-gradient(linear, left top, left bottom, from(#f97c21), to(#e66405)) !important;
+ background: -webkit-linear-gradient(top, #f97c21 0%, #e66405 100%) !important;
+ background: -moz-linear-gradient(top, #f97c21 0%, #e66405 100%) !important;
+ background: -ms-linear-gradient(top, #f97c21, #e66405) !important;
+ background: -o-linear-gradient(top, #f97c21, #e66405) !important;
+box-shadow:0 1px 0 #fea361 inset;
+}
+.vote-answ .answer:nth-of-type(3) div div {
+ background: -webkit-gradient(linear, left top, left bottom, from(#0996ca), to(#0185b6)) !important;
+ background: -webkit-linear-gradient(top, #0996ca 0%, #0185b6 100%) !important;
+ background: -moz-linear-gradient(top, #0996ca 0%, #0185b6 100%) !important;
+ background: -ms-linear-gradient(top, #0996ca, #0185b6) !important;
+ background: -o-linear-gradient(top, #0996ca, #0185b6) !important;
+box-shadow:0 1px 0 #0ab5f4 inset;
+}
+.vote-answ .answer:nth-of-type(4) div div {
+ background: -webkit-gradient(linear, left top, left bottom, from(#f9345d), to(#e21d44)) !important;
+ background: -webkit-linear-gradient(top, #f9345d 0%, #e21d44 100%) !important;
+ background: -moz-linear-gradient(top, #f9345d 0%, #e21d44 100%) !important;
+ background: -ms-linear-gradient(top, #f9345d, #e21d44) !important;
+ background: -o-linear-gradient(top, #f9345d, #e21d44) !important;
+box-shadow:0 1px 0 #ff5277 inset;
+}
+
+
+.vote-bl .vote-info {
+color:#6ebf35;
+font-size:12px;
+text-shadow:1px 1px 0 rgba(0, 0, 0, 0.32);
+text-align:center;
+line-height: 19px;
+padding: 8px 0 2px;
+}
+
+.vote-bl .vote-info a {
+color:#ababab;
+font-style:italic;
+}
+
+.vote-bl .vote-info a:first-of-type {
+padding:0 8px 0 0;
+}
+
+.vote-bl .vote-info span {
+display:block;
+}
+
+/*--- End contentside ---*/
+
+
+
+
+/*--- Start maincontent ---*/
+
+.maincontent {
+float:left;
+width:502px;
+margin:0 6px;
+box-shadow:0 1px 3px rgba(0, 0, 0, 0.12);
+border-radius:2px;
+}
+
+
+.article .article-title {
+ color: #9D9284;
+ font-size: 14px;
+ height: 40px;
+ line-height: 38px;
+ padding: 0 31px;
+ position: relative;
+background-color: #fff;
+ background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#fff));
+ background: -webkit-linear-gradient(top, #f8f8f8 0%, #fff 80%) !important;
+ background: -moz-linear-gradient(top, #f8f8f8 0%, #fff 80%);
+ background: -ms-linear-gradient(top, #f8f8f8, #fff);
+ background: -o-linear-gradient(top, #f8f8f8, #fff);
+}
+
+.article .article-title:first-of-type {
+box-shadow:0 1px 0 #fff inset;
+border-radius:2px 2px 0 0;
+}
+
+.article .article-title:before {
+ background: url("img/kazmusic-bg.png") no-repeat -18px -93px;
+ content: "";
+ height: 8px;
+ left: 12px;
+ position: absolute;
+ top: 16px;
+ width: 8px;
+}
+
+
+
+
+.article .article-title .article-rate {
+width:129px;
+height:23px;
+color:#cacaca;
+font-size:12px;
+font-style:italic;
+position:absolute;
+top:8px;
+right:7px;
+padding:0 0 0 8px;
+line-height:21px;
+background: url("img/kazmusic-bg.png") no-repeat -52px -227px;
+}
+
+.article .article-topinfo {
+width:490px;
+height:29px;
+background: url("img/kazmusic-bg.png") no-repeat -1px -263px;
+margin:0 0 6px 6px;
+font-size:12px;
+font-style:italic;
+padding:0 10px;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+color:#93887a;
+line-height: 30px;
+}
+
+.article .article-topinfo span, .article .article-topinfo a {
+color:#b5aca1;
+}
+
+.article .article-topinfo span:after, .article .article-topinfo a:after {
+content:"";
+width:0;
+height:15px;
+border-right:1px dotted #f4eee8;
+position:relative;
+top:-1px;
+margin:0 6px 0 5px;
+}
+
+
+
+
+
+.article .article-prmess {
+line-height: 18px;
+margin:0 6px;
+}
+
+.article .article-prmess .article-preimg {
+display:block;
+float:left;
+border:4px solid #f9f9f8;
+position:relative;
+margin:0 5px 0 0;
+}
+
+.article .article-prmess .article-preimg:after {
+content:"";
+position:absolute;
+border:1px solid rgba(41, 42, 42, 0.08);
+top:0;
+left:0;
+right:0;
+bottom:0;
+}
+
+
+.article .article-prmess .article-preimg img {
+display:block;
+width:137px;
+}
+
+.article .article-catb {
+width:490px;
+height:32px;
+background:url("img/kazmusic-bg.png") no-repeat -1px -294px;
+margin:5px 0 0 6px;
+}
+
+.article .article-catb .article-cat {
+font-size:12px;
+font-style:italic;
+background-color: #f9f9f9;
+ background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f9f9f9));
+ background: -webkit-linear-gradient(top, #fff 0%, #f9f9f9 80%) !important;
+ background: -moz-linear-gradient(top, #fff 0%, #f9f9f9 80%);
+ background: -ms-linear-gradient(top, #fff, #f9f9f9);
+ background: -o-linear-gradient(top, #fff, #f9f9f9);
+height:26px;
+border-radius:16px;
+display:inline-block;
+margin:7px 0 0 9px;
+box-shadow:0 1px 3px rgba(0, 0, 0, 0.09), 0 -1px 0 #e3e3e3 inset, 0 1px 0 #f4f4f4 inset;
+padding:0 9px;
+color:#f91540;
+line-height: 26px;
+float:left;
+}
+
+.article .article-catb .article-cat a {
+color:#a69b8e;
+}
+
+.article .article-catb .inbut {
+float:right;
+border:3px solid #f2f2e8;
+border-radius:16px;
+margin:5px 6px 0 0;
+}
+
+.article .article-catb .inbut a {
+height:23px;
+display:block;
+font-size:11px;
+text-transform: uppercase;
+background-color: #57a727;
+ background: -webkit-gradient(linear, left top, left bottom, from(#77ca39), to(#57a727));
+ background: -webkit-linear-gradient(top, #77ca39 0%, #57a727 80%) !important;
+ background: -moz-linear-gradient(top, #77ca39 0%, #57a727 80%);
+ background: -ms-linear-gradient(top, #77ca39, #57a727);
+ background: -o-linear-gradient(top, #77ca39, #57a727);
+text-shadow:1px 1px 0 rgba(0, 0, 0, 0.15);
+color:#fff;
+padding:0 16px 0 28px;
+border-top:1px solid #71c435;
+box-shadow:0 1px 0 #8fd84e inset, 0 -1px 0 #549f26 inset;
+border-radius:16px;
+position:relative;
+line-height: 23px;
+}
+
+.article .article-catb .inbut a:after {
+content:"";
+width:8px;
+height:8px;
+position:absolute;
+left: 11px;
+top: 7px;
+background:url("img/kazmusic-bg.png") no-repeat -55px -253px;
+}
+
+.article .article-catb .inbut a:hover {
+background-color: #dd193e;
+ background: -webkit-gradient(linear, left top, left bottom, from(#fa3a66), to(#dd193e));
+ background: -webkit-linear-gradient(top, #fa3a66 0%, #dd193e 80%) !important;
+ background: -moz-linear-gradient(top, #fa3a66 0%, #dd193e 80%);
+ background: -ms-linear-gradient(top, #fa3a66, #dd193e);
+ background: -o-linear-gradient(top, #fa3a66, #dd193e);
+border-top:1px solid #f8325b;
+box-shadow:0 1px 0 #fe547d inset;
+text-decoration:none;
+}
+
+
+
+
+
+
+.maincontent .after-sepline {
+height:10px;
+width:100%;
+background:url("img/kazmusic-bg.png") no-repeat 0 -326px;
+border-top:1px solid #fbfbfb;
+margin:5px 0 0;
+}
+
+
+/*--- End maincontent ---*/
+
+
+
+
+
+
+
+
+
+/*--- Start rightside ---*/
+
+.rightside {
+float:left;
+width:243px;
+
+}
+
+
+.rightside .login-bl {
+background:#232323;
+border-radius:2px;
+margin:0 0 8px;
+}
+
+.rightside .login-bl .login-title {
+height:35px;
+color:#fff;
+font-size:14px;
+text-shadow:1px 1px 0 rgba(0, 0, 0, 0.41);
+padding:0 31px;
+line-height: 34px;
+position:relative;
+}
+
+
+.rightside .login-bl .login-title:before {
+ background: url("img/kazmusic-bg.png") no-repeat -66px -252px;
+ content: "";
+ height: 9px;
+ left: 13px;
+ position: absolute;
+ top: 13px;
+ width: 9px;
+}
+
+
+.rightside .login-bl .login-title span {
+color:#f91540;
+}
+
+.rightside .login-bl .login-title span.cpgreen {
+color:#6abd38;
+}
+
+.rightside .login-bl input {
+height:28px;
+background:#2d2d2d;
+border:0 none;
+border-top:1px solid #3a3a3a;
+outline:0 none;
+box-shadow:0 1px 3px rgba(0, 0, 0, 0.23);
+border-radius:2px;
+position:relative;
+padding:0 5px 0 55px;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+font-size:12px;
+color:#9a9a9a;
+text-shadow:1px 1px 0 rgba(0, 0, 0, 0.33);
+width:224px;
+}
+
+.rightside .login-bl label {
+position:relative;
+display:block;
+margin:0 0 7px 10px;
+line-height:28px;
+}
+.rightside .login-bl label:after {
+content:"ПАРОЛЬ:";
+font-size:12px;
+top:0;
+position:absolute;
+left:11px;
+color:#9a9a9a;
+text-shadow:1px 1px 0 rgba(0, 0, 0, 0.33);
+}
+
+.rightside .login-bl label:first-of-type:after {
+content:"ЛОГИН:";
+}
+
+
+.rightside .login-bl .cpnt {
+color:#3d3d3d;
+float:left;
+padding:0 11px 8px 13px;
+text-shadow:1px 1px 0 rgba(0, 0, 0, 0.48);
+width:221px;
+line-height: 19px;
+}
+
+.rightside .login-bl .cpnt a {
+color:#8f8f8f;
+font-size:12px;
+}
+
+.rightside .login-bl .cpnt a:first-of-type {
+color:#6bbc33;
+}
+
+
+.rightside .login-bl .cpnt a.loginbutton {
+display:block;
+height:22px;
+float:right;
+color:#fff;
+text-shadow:1px 1px 0 rgba(0, 0, 0, 0.19);
+background-color: #54a025;
+ background: -webkit-gradient(linear, left top, left bottom, from(#73c638), to(#54a025));
+ background: -webkit-linear-gradient(top, #73c638 0%, #54a025 100%) !important;
+ background: -moz-linear-gradient(top, #73c638 0%, #54a025 100%);
+ background: -ms-linear-gradient(top, #73c638, #54a025);
+ background: -o-linear-gradient(top, #73c638, #54a025);
+border-top:1px solid #8aec49;
+border-radius:2px;
+padding:0 11px;
+box-shadow:0 1px 3px rgba(0, 0, 0, 0.34);
+line-height: 19px;
+font-size:13px;
+}
+
+.rightside .login-bl .cpnt a.loginbutton:hover {
+background-color: #e01a41;
+ background: -webkit-gradient(linear, left top, left bottom, from(#f6335c), to(#e01a41));
+ background: -webkit-linear-gradient(top, #f6335c 0%, #e01a41 100%) !important;
+ background: -moz-linear-gradient(top, #f6335c 0%, #e01a41 100%);
+ background: -ms-linear-gradient(top, #f6335c, #e01a41);
+ background: -o-linear-gradient(top, #f6335c, #e01a41);
+border-top:1px solid #f95b7c;
+text-decoration:none;
+}
+
+
+
+
+
+
+
+
+
+.rightside .login-bl a.nava {
+border:3px solid #161616;
+float:left;
+position:relative;
+overflow:hidden;
+width:70px;
+height:70px;
+margin:0 0 0 8px;
+}
+
+.rightside .login-bl a.nava img {
+width:70px;
+height:70px;
+}
+
+.rightside .login-bl ul {
+float:left;
+width:149px;
+margin:0 0 7px 5px;
+}
+
+.rightside .login-bl ul li a {
+display:block;
+height:22px;
+text-shadow:1px 1px 0 rgba(0, 0, 0, 0.53);
+color:#ededed;
+font-size:12px;
+border-top:1px dotted #363434;
+border-bottom:1px dotted #151515;
+line-height: 21px;
+padding:0 0 0 16px;
+position:relative;
+}
+
+.rightside .login-bl ul li:first-of-type a {
+border-top:0 none;
+}
+
+.rightside .login-bl ul li:last-of-type a {
+border-bottom:0 none;
+}
+
+.rightside .login-bl ul li a:after {
+content:"";
+width:3px;
+height:3px;
+position:absolute;
+top:10px;
+left:4px;
+background: url("img/kazmusic-bg.png") no-repeat -77px -257px;
+}
+
+.rightside .login-bl ul li a:hover {
+color:#f8143f;
+text-decoration:none;
+}
+
+.rightside .login-bl ul li a:hover:after {
+background-position:-77px -253px;
+}
+
+
+
+
+
+
+.rightside .simp-bl {
+background:#fff;
+box-shadow:0 0 3px rgba(0, 0, 0, 0.12);
+border-bottom:2px solid #f5f5f5;
+}
+
+.rightside .simp-bl .simp-title {
+background-color: #e01a41;
+ background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#f0f0f0));
+ background: -webkit-linear-gradient(top, #fbfbfb 20%, #fff 60%, #f0f0f0 100%) !important;
+ background: -moz-linear-gradient(top, #fbfbfb 20%, #fff 60%, #f0f0f0 100%);
+ background: -ms-linear-gradient(top, #fbfbfb, #fff, #f0f0f0);
+ background: -o-linear-gradient(top, #fbfbfb, #fff, #f0f0f0);
+border-bottom: 1px solid #ededed;
+border-radius: 2px 2px 0 0;
+box-shadow: 0 1px 0 #fff inset, 0 -1px 0 #e2e2e2 inset;
+color: #bcbab4;
+font-size: 14px;
+height: 40px;
+line-height: 40px;
+padding: 0 32px;
+position: relative;
+text-transform: uppercase;
+}
+.rightside .simp-bl .simp-title span {
+color:#61b82d;
+}
+
+.rightside .simp-bl .simp-title:after {
+ background: url("img/kazmusic-bg.png") no-repeat -18px -93px;
+ content: "";
+ height: 8px;
+ left: 14px;
+ position: absolute;
+ top: 15px;
+ width: 8px;
+}
+
+.rightside .simp-bl .cmsepline {
+ background: #61b82d;
+ border-top: 1px solid #468521;
+ box-shadow: 0 1px 0 #58a729 inset, 0 -1px 0 #fff inset;
+ height: 5px;
+border-bottom:1px solid #f2f2f2;
+}
+
+.rightside .simp-bl ul li a {
+ -moz-box-sizing: border-box;
+box-sizing: border-box;
+background-color: #fcfcfc;
+ background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fcfcfc));
+ background: -webkit-linear-gradient(top, #fff 0%, #fcfcfc 100%) !important;
+ background: -moz-linear-gradient(top, #fff 0%, #fcfcfc 100%);
+ background: -ms-linear-gradient(top, #fff, #fcfcfc);
+ background: -o-linear-gradient(top, #fff, #fcfcfc);
+ border-bottom: 1px dotted #E8E8E8;
+ color: #B8AFA5;
+ display: block;
+ font-size: 12px;
+ font-style: italic;
+ height: 33px;
+ line-height: 31px;
+ padding: 0 22px;
+ position: relative;
+ width: 243px;
+}
+
+.rightside .simp-bl ul li a:hover {
+ color: #6DC603;
+}
+
+.rightside .simp-bl ul li:last-of-type {
+border:0 none;
+}
+
+.rightside .simp-bl ul li a:after {
+ background: url("img/kazmusic-bg.png") no-repeat -1px -93px;
+ content: "";
+ height: 8px;
+ left: 9px;
+ position: absolute;
+ top: 11px;
+ width: 6px;
+}
+
+a:hover:after {
+ background-position: -10px -93px;
+}
