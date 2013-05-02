@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Cuprum:400,700italic,700,400italic&subset=latin,cyrillic);
 
 /* Main style-Reset */
-* {
+* {                                                               
  margin: 0;
  padding: 0;
 }
@@ -170,14 +170,14 @@ background:url("img/logo.png") no-repeat;
 margin:31px 0 0 30px;
 }
 
-.header .banner {width:478px;
+.banner {width:478px;
 height:70px;
 float:right;
 background:url("img/kazmusic-bg.png") no-repeat 0 0;
 margin:22px 19px 0 0;
 }
 
-.header .banner a {
+.banner a {
 display:block;
 margin:5px 0 0 5px;
 }
@@ -642,7 +642,7 @@ display:block;
 
 .contentside {
 
-padding:7px 0 100px;
+padding:7px 0 20px;
 
 }
 
@@ -1218,7 +1218,7 @@ float:left;
 }
 
 .article .article-catb .article-cat a {
-color:#a69b8e;
+  color:#a69b8e;
 }
 
 .article .article-catb .inbut {
@@ -1606,10 +1606,197 @@ a:hover:after {
       
 /* Выпадающее меню */
 .dropdown {}
-  .dropdown ul {background: #df1239 !important; border-top: 1px solid #fd2a52; margin-bottom: -2px; position: relative; z-index: 100;}
+  .dropdown a:before {content: ""; width: 16px; height: 17px; position: absolute; right: 8px; top: 8px; background: url("img/kazmusic-bg.png") no-repeat -35px -227px;}
+  .dropdown ul {background: #df1239 !important; border-top: 1px solid #fd2a52; margin-bottom: -2px; position: relative; z-index: 100; display: none;}
     .dropdown ul li {border-top: 1px dotted #f31e46; border-bottom: 1px dotted #b80c2d;}
     .dropdown ul li:first-child {border-top: 1px solid #c41032;}
       .dropdown ul li a {background: #df1239 !important;}
       .dropdown ul li a:hover {background: none !important; box-shadow: none !important; color: #463134; text-shadow: 1px 1px 0 #f21741;} 
-      .dropdown ul li a:after {background:url("img/kazmusic-bg.png") no-repeat -39px -71px;}
-      .dropdown ul li a:hover:after {background:url("img/kazmusic-bg.png") no-repeat -44px -71px;}
+      .dropdown ul li a:after {background:url("img/kazmusic-bg.png") no-repeat -170px -93px;}
+      .dropdown ul li a:before {background: none !important;}
+      .dropdown ul li a:hover:after {background:url("img/kazmusic-bg.png") no-repeat -170px -100px;}
+      
+/* Рейтинг в новости */
+.rating {list-style: none; margin: 5px 0 0 5px;}
+  .rating li {float: left; width: 12px; height: 10px;}
+    .rating li a {background: url("img/kazmusic-bg.png") no-repeat -64px -336px; display: block; width: 12px; height: 10px;}
+    .rating li a:hover {background-position: -40px -336px !important;}
+    .rating li.active a {background-position: -52px -336px;}
+    
+/* Скрытый текст + спойлер */
+.hide, .spoiler {margin: 10px 0;}
+.hide .hide-title, .spoiler .spoiler-title {
+  background: #fa3761; /* Old browsers */
+  background: -moz-linear-gradient(top, #fa3761 0%, #dd173d 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fa3761), color-stop(100%,#dd173d)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fa3761 0%,#dd173d 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fa3761 0%,#dd173d 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fa3761 0%,#dd173d 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #fa3761 0%,#dd173d 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa3761', endColorstr='#dd173d',GradientType=0 ); /* IE6-9 */
+  height: 25px;
+  position: relative;
+  padding: 5px 0 0 23px;
+  font-size: 12px;
+  font-style: italic;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.09);
+  border-top: 1px solid #fd5376;
+  outline: 1px solid #e6254d;
+  -webkit-box-shadow: 0px 2px 2px 2px rgba(177, 118, 130, 0.7);
+  box-shadow: 0px 2px 2px 2px rgba(177, 118, 130, 0.7);
+  display: block;
+}
+
+.hide .hide-title:hover, .spoiler .spoiler-title:hover {text-decoration: none;}
+
+.hide .hide-content, .spoiler .spoiler-content, .code-quote .code-quote-content {
+  background: #f5f5f5; /* Old browsers */
+  background: -moz-linear-gradient(top, #f5f5f5 0%, #ffffff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f5f5f5 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f5f5f5 0%,#ffffff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f5f5f5 0%,#ffffff 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #f5f5f5 0%,#ffffff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  padding: 8px;
+  border-top: 1px solid #fff;
+  -webkit-box-shadow: 0px 1px 2px 1px rgba(162, 162, 162, 0.15); 
+  box-shadow: 0px 1px 2px 1px rgba(162, 162, 162, 0.15);
+  border-radius: 3px;
+  margin-top: 4px;
+}
+
+.hide .plus i, .hide .minus i, .spoiler .plus i, .spoiler .minus i {position: absolute; left: 6px; top: 10px; background: url("img/kazmusic-bg.png") no-repeat; display: block; width: 11px; height: 11px;}
+  .hide .plus i, .spoiler .plus i {background-color: #b10b2c; background-position: -76px -336px;}
+  .hide .minus i, .spoiler .minus i {background-color: #414141; background-position: -76px -347px;}
+  
+/* Цитата + просмотр кода */
+.code-quote .code-quote-title {
+  background: #75c838; /* Old browsers */
+  background: -moz-linear-gradient(top, #75c838 0%, #59a929 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#75c838), color-stop(100%,#59a929)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #75c838 0%,#59a929 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #75c838 0%,#59a929 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #75c838 0%,#59a929 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #75c838 0%,#59a929 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75c838', endColorstr='#59a929',GradientType=0 ); /* IE6-9 */
+  height: 25px;
+  padding: 6px 0 0 10px;
+  font-size: 12px;
+  font-style: italic;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.09);
+  border-top: 1px solid #7dd83c;
+  outline: 1px solid #519d21;
+  -webkit-box-shadow: 0px 2px 2px 2px rgba(145, 173, 128, 0.7);
+  box-shadow: 0px 2px 2px 2px rgba(145, 173, 128, 0.7);
+  display: block;
+  position: relative;
+  z-index: 100;  
+}
+
+/* Скриншоты */
+.screenshot {margin: 10px auto;}
+  .screenshot ul {list-style: none;}
+    .screenshot ul li {width: 160px; height: 107px; float: left; margin-right: 4px;}
+    .screenshot ul li.last {margin-right: 0px;}
+      .screenshot ul li img {width: 156px; height: 103px; border: 3px solid #f9f4ed;}
+      
+/* Вернуться */
+.return {float:right; border:3px solid #f2f2e8; border-radius:16px; margin:5px 6px 0;}
+  .return a {height:23px; display:block; font-size:11px; text-transform:uppercase; background-color:#57a727; background:-webkit-gradient(linear,left top,left bottom,from(#77ca39),to(#57a727)); background:-webkit-linear-gradient(top,#77ca39 0%,#57a727 80%) !important; background:-moz-linear-gradient(top,#77ca39 0%,#57a727 80%); background:-ms-linear-gradient(top,#77ca39,#57a727); background:-o-linear-gradient(top,#77ca39,#57a727); text-shadow:1px 1px 0 rgba(0,0,0,0.15); border-top:1px solid #71c435; box-shadow:0 1px 0 #8fd84e inset,0 -1px 0 #549f26 inset; color:#fff; padding:0 16px 0 28px; border-radius:16px; position:relative; line-height:23px;}
+  .return a:hover {height:23px; display:block; font-size:11px; text-transform:uppercase; background-color:#dd193e; background:-webkit-gradient(linear,left top,left bottom,from(#fa3a66),to(#dd193e)); background:-webkit-linear-gradient(top,#fa3a66 0%,#dd193e 80%) !important; background:-moz-linear-gradient(top,#fa3a66 0%,#dd193e 80%); background:-ms-linear-gradient(top,#fa3a66,#dd193e); background:-o-linear-gradient(top,#fa3a66,#dd193e); border-top:1px solid #f8325b; box-shadow:0 1px 0 #fe547d inset; color:#fff; padding:0 16px 0 28px; border-radius:16px; position:relative; line-height:23px; text-decoration:none;}
+  .return a:after {content:""; width:10px; height:10px; position:absolute; left:12px; top:7px; background:url("img/kazmusic-bg.png") no-repeat -98px -336px;}
+
+/* Похожие публикации */
+.related {border-top: 2px solid #f5f5f5; background-color: #f2f2e8; border-bottom: 1px solid #fff;}
+  
+  .related .related-title {border-bottom: 3px solid #e4e4d5; height: 41px; background-color: #f8f8f8; background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f8f8f8)); background: -webkit-linear-gradient(top, #fff 0%, #f8f8f8 100%) !important; background: -moz-linear-gradient(top, #fff 0%, #f8f8f8 100%); background: -ms-linear-gradient(top, #fff, #f8f8f8); background: -o-linear-gradient(top, #fff, #f8f8f8);}
+    .related .related-title-name {position: relative; padding: 13px 0 0 29px; color: #bbad9e;}
+      .related .related-title-name:after {background: url("img/kazmusic-bg.png") no-repeat -18px -93px; content: ""; position: absolute; top: 17px; left: 12px; width: 8px; height: 8px; display: block;}      
+      .related .related-title-name span {color: #f91540;}
+    .related .related-title-btns {border-left: 1px solid #fefefe;}
+      .related .related-title-btns .arrows {width:37px; height:41px; display:block; border-left: 1px solid #f0efef; box-shadow: -1px 0 0 #fdfdfd; float:left; background:url("img/kazmusic-bg.png") no-repeat;}
+      .related .related-title-btns a.prev {background-position: -38px -350px;}
+        .related .related-title-btns a.prev:hover {background-position: left -350px;}
+      .related .related-title-btns a.next {background-position: -114px -350px;}
+        .related .related-title-btns a.next:hover {background-position: -76px -350px;} 
+
+  .related .related-content {width: 495px; margin: 5px auto 0 auto;}  
+    .related .related-content li{float:left;}
+      .related .related-content li:nth-child(2n){margin:0 0 5px 5px;}
+      .related .related-content li a{box-shadow:1px 1px 0 #ebebe8 inset,-1px -1px 0 #ebebe8 inset;display:block;height:71px;width:245px; background:#fff;font-style:italic;font-size:12px;color:#8f8f7a;}
+        .related .related-content li a div{-moz-box-sizing:border-box;box-sizing:border-box;padding:0 6px 0 6px;width:171px;height:32px;float:right;}
+        .related .related-content li a img{float:left;border:3px solid #e2e2d2;width:64px;height:65px;position:relative;}
+        .related .related-content li a:hover img{border:3px solid #45494e;}
+        .related .related-content li a span{-moz-box-sizing:border-box;box-sizing:border-box; border-bottom:1px dotted #DFDFDF; color:#9f9182; display:block; float:right; height:34px; line-height:12px; padding:5px 13px 0; width:175px;position:relative;}
+        .related .related-content li a span:after{content:"";background:url("img/kazmusic-bg.png") no-repeat -26px -76px;width:5px;height:9px;position:absolute;top:12px;left:0;}
+        .related .related-content li a:hover span{color:#f91540;}
+        .related .related-content li a:hover span:after{background-position:-15px -76px;}
+        .related .related-content li a div ul {}
+          .related .related-content li a div ul li {height: 25px; float: left; padding: 11px 0 0 4px; font-style: normal; margin: 0 !important;}
+          .related .related-content li a div ul li.date {color: #73bd47; border-right: 1px solid #fdfdfd; box-shadow: -5px 0 10px rgba(250,250,250,0.5) inset; padding-right: 15px;}
+            .related .related-content li a div ul li.date i {background: url("img/kazmusic-bg.png") no-repeat -36px -246px; width: 13px; height: 13px; display: block; float: left; margin-right: 9px;}
+          .related .related-content li a div ul li.comm {color: #eb264e; border-left: 1px solid #f5f3f3; padding-left: 10px;}
+            .related .related-content li a div ul li.comm i {background: url("img/kazmusic-bg.png") no-repeat left -391px; width: 14px; height: 12px; display: block; position: relative; top: 1px; float: left; margin-right: 8px;}   
+            
+/* Комментарии */
+.comments {border-top: 2px solid #f5f5f5; background-color: #f2f2e8;}
+  
+  .comments .comments-title {border-bottom: 1px solid #efefef; height: 41px; background-color: #f8f8f8; background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f8f8f8)); background: -webkit-linear-gradient(top, #fff 0%, #f8f8f8 100%) !important; background: -moz-linear-gradient(top, #fff 0%, #f8f8f8 100%); background: -ms-linear-gradient(top, #fff, #f8f8f8); background: -o-linear-gradient(top, #fff, #f8f8f8);}
+    .comments .comments-title-name {position: relative; padding: 13px 0 0 29px; color: #bbad9e;}
+      .comments .comments-title-name:after {background: url("img/kazmusic-bg.png") no-repeat -18px -93px; content: ""; position: absolute; top: 17px; left: 12px; width: 8px; height: 8px; display: block;}      
+      .comments .comments-title-name span {color: #69bb32;}
+    .comments .comments-title-count {background-color: #ee2952; padding: 7px 8px; color: #fff; text-shadow: 1px 1px 0px #000; margin: 6px 8px 0 0; border-radius: 2px;}
+        
+  .comments .comments-content {background-color: #fff; padding-top: 2px;}
+  
+    .comments .comments-content .comments-item {width: 492px; margin: 5px auto;}
+      .comments .comments-content .comments-item .comments-item-avatar {width: 67px; position: relative; text-align: center;}
+        .comments .comments-content .comments-item .comments-item-avatar span {-moz-box-sizing:border-box;box-sizing:border-box; height: 74px; display: block;}
+        .comments .comments-content .comments-item .comments-item-avatar span:after {content:"";background:url("img/kazmusic-bg.png") no-repeat -26px -76px;width:5px;height:9px;position:absolute;top:12px;right:-8px; opacity: 0.4;}
+        .comments .comments-content .comments-item .comments-item-avatar img {border: 3px solid #ececec; width: 64px; height: 65px;} 
+        .comments .comments-content .comments-item .comments-item-avatar a {margin-top: 5px; text-transform: lowercase; color: #66b830; font-style: italic;}
+          .comments .comments-content .comments-item .comments-item-avatar a:hover {text-decoration: none; color: #ee2952;}  
+      .comments .comments-content .comments-item .comments-item-info-text {width: 420px; margin-left: 2px; border-top: 1px solid #f5f5f5; -webkit-border-radius: 0px 2px 2px 0px; border-radius: 0px 2px 2px 0px;}
+        .comments .comments-content .comments-item .comments-item-info-text .comments-item-info {background-color:#f8f8f8;background:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#f8f8f8));background:-webkit-linear-gradient(top,#fff 0%,#f8f8f8 100%) !important;background:-moz-linear-gradient(top,#fff 0%,#f8f8f8 100%);background:-ms-linear-gradient(top,#fff,#f8f8f8);background:-o-linear-gradient(top,#fff,#f8f8f8); border-right: 1px solid #f2f2f2; border-bottom: 1px solid #f2f2f2; -webkit-border-radius: 0px 2px 2px 0px; border-radius: 0px 2px 2px 0px; width: 410px; height: 25px; display: block; padding: 8px 0 0 10px; color: #999591;}    
+          .comments .comments-content .comments-item .comments-item-info-text .comments-item-info .date {background-color: #61b82d; padding: 3px 7px; color: #fff; text-shadow: 1px 1px 0px #000; border-radius: 2px; margin-left: 5px;}      
+          .comments .comments-content .comments-item .comments-item-info-text .comments-item-info .comments-rating {width: 70px;}
+           .comments .comments-content .comments-item .comments-item-info-text .comments-item-info .comments-rating a, .comments .comments-content .comments-item .comments-item-info-text .comments-item-info .comments-rating span {width: 21px; height: 21px; display: block; float: left; position: relative;}
+            .comments .comments-content .comments-item .comments-item-info-text .comments-item-info .comments-rating a:hover {background: url("img/kazmusic-bg.png") no-repeat -36px -391px !important;}
+              .comments .comments-content .comments-item .comments-item-info-text .comments-item-info .comments-rating span {padding: 3px 0 0 0; text-align: center;}
+              .comments .comments-content .comments-item .comments-item-info-text .comments-item-info .comments-rating a.plus {background: url("img/kazmusic-bg.png") no-repeat -57px -391px;}
+                .comments .comments-content .comments-item .comments-item-info-text .comments-item-info .comments-rating a.plus:after {content: ""; background: url("img/kazmusic-bg.png") no-repeat -78px -391px; position: absolute; display: block; width: 8px; height: 8px; top: 7px; left: 7px;}
+              .comments .comments-content .comments-item .comments-item-info-text .comments-item-info .comments-rating a.minus {background: url("img/kazmusic-bg.png") no-repeat -15px -391px;}
+                .comments .comments-content .comments-item .comments-item-info-text .comments-item-info .comments-rating a.minus:after {content: ""; background: url("img/kazmusic-bg.png") no-repeat -78px -399px; position: absolute; display: block; width: 9px; height: 8px; top: 10px; left: 5px;}
+        .comments .comments-content .comments-item .comments-item-info-text .comments-text {padding: 5px 10px 0 10px;}  
+        
+/* Ошибка */
+.error {background: #f8355e; background: -moz-linear-gradient(top, #f8355e 0%, #e01a41 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8355e), color-stop(100%,#e01a41)); background: -webkit-linear-gradient(top, #f8355e 0%,#e01a41 100%); background: -o-linear-gradient(top, #f8355e 0%,#e01a41 100%); background: -ms-linear-gradient(top, #f8355e 0%,#e01a41 100%); background: linear-gradient(to bottom, #f8355e 0%,#e01a41 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8355e', endColorstr='#e01a41',GradientType=0 ); border-top: 1px solid #fd456b; -webkit-box-shadow: 0px 1px 2px 1px #db7186; box-shadow: 0px 1px 2px 1px #db7186; width: 84%; margin: 10px auto; position: relative; padding: 10px 10px 10px 55px; font-size: 11px; color: #fff; text-shadow: 1px 1px 0px #000; border-radius: 3px;}       
+  .error:after {content: ""; background: url("img/kazmusic-bg.png") no-repeat left -412px; width: 32px; height: 33px; position: absolute; top: 16px; left: 12px;} 
+
+/* Форма добавления комментария */
+.addcomment {}
+  .addcomment-in {background-color: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12); border-radius: 5px; width: 97%; margin: 0 auto; padding-bottom: 1px; margin-bottom: 10px;}  
+    .addcomment-in .icons {padding:5px 8px 7px 8px; background-color:#f8f8f8; background:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#f8f8f8)); background:-webkit-linear-gradient(top,#fff 0%,#f8f8f8 100%) !important;    background:-moz-linear-gradient(top,#fff 0%,#f8f8f8 100%);    background:-ms-linear-gradient(top,#fff,#f8f8f8);    background:-o-linear-gradient(top,#fff,#f8f8f8);    -webkit-box-shadow:0px 1px 1px 1px rgba(162,162,162,0.1);     box-shadow:0px 1px 1px 1px rgba(162,162,162,0.1);    border-top:1px solid #fff;    border-radius:4px;    border-bottom:1px solid #f4f4f;}  
+      .addcomment-in .icons .lcol {}  
+        .addcomment-in .icons .lcol li {float: left;}
+          .addcomment-in .icons .lcol li a {padding:2px 0;  background-color:#f8f8f8; background:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#f8f8f8)); background:-webkit-linear-gradient(top,#fff 0%,#f8f8f8 100%) !important; background:-moz-linear-gradient(top,#fff 0%,#f8f8f8 100%); background:-ms-linear-gradient(top,#fff,#f8f8f8); background:-o-linear-gradient(top,#fff,#f8f8f8); display:block; -webkit-box-shadow:0px 1px 3px 1px rgba(162,162,162,0.3); box-shadow:0px 1px 3px 1px rgba(162,162,162,0.3); margin-right:9px; border-radius:3px;}        
+      .addcomment-in .icons .smile li a {display:block; height:20px; float:right; color:#fff; text-shadow:1px 1px 0 rgba(0,0,0,0.19);  background-color:#54a025; background:-webkit-gradient(linear,left top,left bottom,from(#73c638),to(#54a025)); background:-webkit-linear-gradient(top,#73c638 0%,#54a025 100%) !important; background:-moz-linear-gradient(top,#73c638 0%,#54a025 100%); background:-ms-linear-gradient(top,#73c638,#54a025); background:-o-linear-gradient(top,#73c638,#54a025); border-top:1px solid #8aec49; border-radius:2px; padding:0 11px; box-shadow:0 1px 3px rgba(0,0,0,0.34); line-height:19px; font-size:11px; font-style:italic;}    
+        .addcomment-in .icons .smile li a:hover {text-decoration: none;}        
+      .addcomment-text {background-color: #fff; border: 1px solid #ececec; width: 485px; height: 100px; margin: 10px auto 10px auto; border-radius: 3px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.12) inset; width: 96%;}
+        .addcomment-text textarea {border: none; resize: none; height: 90px; margin: 5px 0 0 10px; width: 96%; font: 12px 'Cuprum';}
+  .addcomment .send {border: 3px solid #f2f2e8; width: 90px; height: 23px; border-radius: 16px; margin: 0 auto 5px auto;}
+  .addcomment button {height:23px; font-family: 'Cuprum'; font-size:11px; text-transform:uppercase; color:#fff; border: none !important; border-radius:16px; line-height:23px; text-align: center; cursor: pointer; margin: 0 0 10px 0; height: 23px; display:block;font-size:11px;text-transform:uppercase;background-color:#57a727;background:-webkit-gradient(linear,left top,left bottom,from(#77ca39), to(#57a727));background:-webkit-linear-gradient(top,#77ca39 0%,#57a727 80%) !important;background:-moz-linear-gradient(top,#77ca39 0%,#57a727 80%);background:-ms-linear-gradient(top,#77ca39,#57a727);background:-o-linear-gradient(top,#77ca39,#57a727);text-shadow:1px 1px 0 rgba(0,0,0,0.15);border-top:1px solid #71c435;box-shadow:0 1px 0 #8fd84e inset, 0 -1px 0 #549f26 inset;color:#fff;padding:0 20px 0 20px;border-radius:16px;position:relative;line-height:23p}
+  
+/* Баннер */
+.maincontent .banner {margin: 10px 12px 10px 0 !important;}
+
+/* Постраничная навигация */
+.navpage {color: #a1998e; font-size: 13px; padding-top: 10px; text-align: center;}
+  .navpage a {color: #a1998e;}
+  .navpage a:hover {color: #f5325b; text-decoration: none;}
+  
+/* Футер */
+footer {-webkit-border-radius: 5px 5px 0px 0px; border-radius: 5px 5px 0px 0px; width: 1000px; height: 132px; box-shadow: 0 1px 15px rgba(0, 0, 0, 0.4);}  

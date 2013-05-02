@@ -4,7 +4,19 @@
   <meta charset="UTF-8">
   <title>Главная</title>
   <link rel="stylesheet" href="style.css" type="text/css">
-  
+  <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.dropdown a').click(function() {
+        var speed = "200";
+        $(this).next("ul").slideToggle(speed);
+        return false;
+      });
+    });  
+  </script>
 </head>
 <body>
 
@@ -150,7 +162,7 @@
           <div class="cmsepline"></div>
           <ul>
             <li><a href="/">Главная</a></li>
-            <li class="dropdown"><a href="/">Выпадающее меню</a>
+            <li class="dropdown"><a href="#">Выпадающее меню</a>
               <ul>
                 <li><a href="/">Подкатегория меню</a></li>
                 <li><a href="/">Подкатегория меню</a></li>
@@ -159,7 +171,13 @@
             </li>
             <li><a href="/">Главная</a></li>
             <li><a href="/">Главная</a></li>
-            <li><a href="/">Главная</a></li>
+            <li class="dropdown"><a href="#">Выпадающее меню</a>
+              <ul>
+                <li><a href="/">Подкатегория меню</a></li>
+                <li><a href="/">Подкатегория меню</a></li>
+                <li><a href="/">Подкатегория меню</a></li>
+              </ul>
+            </li>
             <li><a href="/">Главная</a></li>
             <li><a href="/">Главная</a></li>
           </ul>
@@ -236,7 +254,17 @@
         
           <div class="article-title">
             Концертное агентство «HR» подало в суд на DMX
-            <div class="article-rate">Рейтинг: </div>
+            <div class="article-rate">
+              <span class="lcol">Рейтинг:</span> 
+              <ul class="rating lcol">
+                <li class="active"><a href="/"></a></li>
+                <li class="active"><a href="/"></a></li>
+                <li class="active"><a href="/"></a></li>
+                <li><a href="/"></a></li>
+                <li><a href="/"></a></li>
+                <li><div class="clr"></div></li>
+              </ul>
+            </div>
           </div>
   
           <div class="article-topinfo">
@@ -280,7 +308,17 @@
         
           <div class="article-title">
             Концертное агентство «HR» подало в суд на DMX
-            <div class="article-rate">Рейтинг: </div>
+            <div class="article-rate">
+              <span class="lcol">Рейтинг:</span>
+              <ul class="rating lcol">
+                <li class="active"><a href="/"></a></li>
+                <li class="active"><a href="/"></a></li>
+                <li class="active"><a href="/"></a></li>
+                <li><a href="/"></a></li>
+                <li><a href="/"></a></li>
+                <li><div class="clr"></div></li>
+              </ul> 
+            </div>
           </div>
   
           <div class="article-topinfo">
@@ -294,31 +332,285 @@
             <a class="article-preimg" href="/">
               <img src="img/test-img4.png">
             </a>          
-            Концертное агентство «Heavy Rotation LLC» подало в суд 
-            заявление на рэпера DMX в Нью-Йорке. Дело в том, что Dark Man
-             нарушил соглашение и не выступил на разных шоу и концертах, 
-            к тому же ещё выступал на мероприятиях от другого агентства.
-            TMZ сообщает, что «HR» требует от DMX $630,000 долларов, за 
-            несостоявшийся международный тур (наверное речь идёт также о 
-            европейском концертном туре). Контракт, который заключили 
-            ранее обе стороны, давал эксклюзивные права «HR» на концерты 
-            во всём мире. Напомним, у рэпера полно проблем с законом: это 
-            алименты, которые задолжал Х за ребёнка, грубые нарушения 
-            правил дорожного движения, повлекшие за собой изъятие 
-            паспорта и из-за этого невозможность выезда за рубеж. Кажется, 
-            что повезло DMX, т.к. не придется ходить в розовой форме целый год из-за того, что опять 
-            "попался". Суд решил перевести рэппера из мест не столь отдаленных в психиатрическую 
-            больницу. А можете оно и правильно? Вспомнить хотя бы издевательство рэппера над собаками или употребление кокаина.
+            <p>
+              Концертное агентство «Heavy Rotation LLC» подало в суд 
+              заявление на рэпера DMX в Нью-Йорке. Дело в том, что Dark Man
+               нарушил соглашение и не выступил на разных шоу и концертах, 
+              к тому же ещё выступал на мероприятиях от другого агентства.
+              TMZ сообщает, что «HR» требует от DMX $630,000 долларов, за 
+              несостоявшийся международный тур (наверное речь идёт также о 
+              европейском концертном туре).               
+              Контракт, который заключили ранее обе стороны, давал эксклюзивные 
+              права «HR» на концерты во всём мире. Напомним, у рэпера полно 
+              проблем с законом: это алименты, которые задолжал Х за ребёнка, 
+              грубые нарушения правил дорожного движения, повлекшие за собой 
+              изъятие паспорта и из-за этого невозможность выезда за рубеж. 
+              Кажется, что повезло DMX, т.к. не придется ходить в розовой форме 
+              целый год из-за того, что опять "попался". Суд решил перевести 
+              рэппера из мест не столь отдаленных в психиатрическую больницу. 
+              А можете оно и правильно? Вспомнить хотя бы издевательство рэппера
+              над собаками или употребление кокаина.
+            </p>
+            
+            <div class="hide">
+              <a href="/" class="hide-title plus"><i></i>Скрытый текст</a>
+              <div class="hide-content">
+                Последние полицейские сводки таковы: порошок не является ни тем, ни другим. Зато они 
+                обнаружили горстку марихуаны и ее тоже приобщили к делу. Собачьи останки же были отправлены
+              </div>
+            </div>
+
+            <div class="code-quote">
+              <div class="code-quote-title">Пример цитаты и исходного кода</div>
+              <div class="code-quote-content">
+                Последние полицейские сводки таковы: порошок не является ни тем, ни другим. Зато они 
+                обнаружили горстку марихуаны и ее тоже приобщили к делу. Собачьи останки же были отправлены
+              </div>
+            </div>
+            
+            <div class="screenshot">
+              <ul>
+                <li><a href="/"><img src="img/test-img3.png" alt="" /></a></li>
+                <li><a href="/"><img src="img/test-img3.png" alt="" /></a></li>
+                <li class="last"><a href="/"><img src="img/test-img3.png" alt="" /></a></li>
+              </ul>
+              <div class="clr"></div>
+            </div>
+            
           </div>
   
           <div class="article-catb">
             <div class="article-cat">Категория: <a href="/">Музыкальные новости</a></div>
-            <div class="inbut"><a href="/">ПОДРОБНЕЕ</a></div>
+            <div class="return"><a href="/">ВЕРНУТЬСЯ</a></div>
           </div>
   
           <div class="after-sepline"></div>
       
         </div>
+
+        <div class="related">
+        
+          <div class="related-title">
+          
+            <div class="related-title-name lcol">
+              <i class="lcol"></i> ПОХОЖИЕ <span>ПУБЛИКАЦИИ</span>
+            </div>
+            
+            <div class="related-title-btns rcol">
+              <a href="#" class="arrows prev"></a>
+              <a href="#" class="arrows next"></a>
+            </div>
+          
+          </div>
+          
+          <div class="related-content">
+          
+            <ul>
+              <li>
+                <a href="/">
+                  <img alt="" src="img/test-img2.png">
+                  <span>50 Cent назвал причины трений с Floyd Mayweather</span>
+                  <div>
+                    <ul>
+                      <li class="date"><i></i>1 ноября 2012</li>
+                      <li class="comm"><i></i>23</li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <img alt="" src="img/test-img2.png">
+                  <span>50 Cent назвал причины трений с Floyd Mayweather</span>
+                  <div>
+                    <ul>
+                      <li class="date"><i></i>1 ноября 2012</li>
+                      <li class="comm"><i></i>23</li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <img alt="" src="img/test-img2.png">
+                  <span>50 Cent назвал причины трений с Floyd Mayweather</span>
+                  <div>
+                    <ul>
+                      <li class="date"><i></i>1 ноября 2012</li>
+                      <li class="comm"><i></i>23</li>
+                    </ul>
+                  </div>
+                </a>
+              </li>          
+              <li>
+                <a href="/">
+                  <img alt="" src="img/test-img2.png">
+                  <span>50 Cent назвал причины трений с Floyd Mayweather</span>
+                  <div>
+                    <ul>
+                      <li class="date"><i></i>1 ноября 2012</li>
+                      <li class="comm"><i></i>23</li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <img alt="" src="img/test-img2.png">
+                  <span>50 Cent назвал причины трений с Floyd Mayweather</span>
+                  <div>
+                    <ul>
+                      <li class="date"><i></i>1 ноября 2012</li>
+                      <li class="comm"><i></i>23</li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <img alt="" src="img/test-img2.png">
+                  <span>50 Cent назвал причины трений с Floyd Mayweather</span>
+                  <div>
+                    <ul>
+                      <li class="date"><i></i>1 ноября 2012</li>
+                      <li class="comm"><i></i>23</li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            
+            <div class="clr"></div>
+            
+          </div>
+        
+        </div>
+
+        <div class="comments">
+        
+          <div class="comments-title">
+          
+            <div class="comments-title-name lcol">
+              <i class="lcol"></i> КОММЕНТАРИИ <span>ПОЛЬЗОВАТЕЛЕЙ</span>
+            </div>
+            
+            <div class="comments-title-count rcol">
+              <span>Всего: 25</span>
+            </div>
+                      
+          </div>
+          
+          <div class="comments-content">
+          
+            <div class="comments-item">
+              <div class="comments-item-avatar lcol">
+                <span><img src="img/test-img5.png" alt="" /></span>
+                <a href="/">Ответить</a>
+              </div>
+              <div class="comments-item-info-text lcol">
+                <div class="comments-item-info">
+                  <div class="lcol">
+                    <span>Написал(а): Panacea</span>
+                    <span class="date">Вчера, в 19:37:15</span>
+                  </div>
+                  <div class="comments-rating rcol">
+                    <a href="/" class="plus"></a>
+                    <span>21</span>
+                    <a href="/" class="minus"></a>  
+                  </div>
+                </div>
+                <div class="comments-text">
+                  Это не Floyd. Floyd не пишет твиты. Это не он в instagram. У него есть кто-то 
+                  рядом с ним," объяснил 50." Вы видите, что все вокруг него от него зависят. 
+                  Таким образом, они собираются мирится с тем, что он говорит независимо от 
+                  чего-либо.
+                </div>
+              </div>
+              <div class="clr"></div>
+            </div>
+
+            <div class="after-sepline"></div>
+
+            <div class="comments-item">
+              <div class="comments-item-avatar lcol">
+                <span><img src="img/test-img5.png" alt="" /></span>
+                <a href="/">Ответить</a>
+              </div>
+              <div class="comments-item-info-text lcol">
+                <div class="comments-item-info">
+                  <div class="lcol">
+                    <span>Написал(а): Panacea</span>
+                    <span class="date">Вчера, в 19:37:15</span>
+                  </div>
+                  <div class="comments-rating rcol">
+                    <a href="/" class="plus"></a>
+                    <span>21</span>
+                    <a href="/" class="minus"></a>  
+                  </div>
+                </div>
+                <div class="comments-text">
+                  Это не Floyd. Floyd не пишет твиты. Это не он в instagram. У него есть кто-то 
+                  рядом с ним," объяснил 50." Вы видите, что все вокруг него от него зависят. 
+                  Таким образом, они собираются мирится с тем, что он говорит независимо от 
+                  чего-либо.
+                </div>
+              </div>
+              <div class="clr"></div>
+            </div>
+            
+            <div class="after-sepline"></div>
+            
+            <div class="error">
+              <span class="title">Ошибка!</span>
+              <div class="error-text">
+                Уважаемый посетитель, Вы зашли на сайт как незарегистрированный пользователь.
+                Мы рекомендуем Вам зарегистрироваться либо войти на сайт под своим именем.
+              </div>
+            </div>
+            
+            <div class="addcomment">
+              <div class="addcomment-in">
+                <div class="icons">
+                  <ul class="lcol">
+                    <li><a href="/"><img src="img/bbcodes/b.png" alt="" /></a></li>
+                    <li><a href="/"><img src="img/bbcodes/i.png" alt="" /></a></li>
+                    <li><a href="/"><img src="img/bbcodes/u.png" alt="" /></a></li>
+                    <li><a href="/"><img src="img/bbcodes/size.png" alt="" /></a></li>
+                    <li><a href="/"><img src="img/bbcodes/color.png" alt="" /></a></li>
+                    <li><a href="/"><img src="img/bbcodes/link.png" alt="" /></a></li>
+                    <li><a href="/"><img src="img/bbcodes/mail.png" alt="" /></a></li>
+                    <li><a href="/"><img src="img/bbcodes/img.png" alt="" /></a></li>
+                    <li><a href="/"><img src="img/bbcodes/hide.png" alt="" /></a></li>
+                    <li><a href="/"><img src="img/bbcodes/left.png" alt="" /></a></li>
+                    <li><a href="/"><img src="img/bbcodes/center.png" alt="" /></a></li>
+                    <li><a href="/"><img src="img/bbcodes/right.png" alt="" /></a></li>
+                  </ul>
+                  <ul class="smile rcol">
+                    <li><a href="/">Смайлы</a></li>
+                  </ul>
+                  <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+                <div class="addcomment-text">
+                  <textarea></textarea>
+                </div>
+              </div>
+              <div class="send">
+                <button>Отправить</button>
+              </div>
+            </div>  
+            
+            <div class="clr"></div>
+            
+            <div class="after-sepline"></div>
+            
+          </div>
+        
+        </div>
+
+        <div class="navpage"><span>1-10</span> <a href="/">1-10</a> <span>1-10</span></div>
+
+        <div class="banner"><a href="/"><img src="img/468x60.png" alt=""></a></div>
 
       </div>
 
@@ -367,6 +659,10 @@
       <div class="clr"></div>
     
     </div>
+
+    <footer>
+      
+    </footer>
 
   </div>
   
